@@ -1,0 +1,6 @@
+---
+Name: geopicker
+---
+
+Gurucomkz\GeoPicker\GeoLocationPickerInput:
+  GooglePlacesAPIKey: "`PLACES_API_KEY`"

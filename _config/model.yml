@@ -1,0 +1,8 @@
+---
+Name: geofieldtypes
+After:
+  - '#corefieldtypes'
+---
+SilverStripe\Core\Injector\Injector:
+  GeoLocation:
+    class: Gurucomkz\GeoPicker\DBGeoLocation
