@@ -15,6 +15,10 @@ Check out the following links to get it working
 * https://developers.google.com/maps/gmp-get-started#enable-api-sdk
 * https://developers.google.com/maps/documentation/places/web-service/get-api-key
 
+Then put the key into your .env file:
+```
+PLACES_API_KEY="the-key"
+```
 ## Usage
 
 ```php
