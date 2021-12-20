@@ -15,6 +15,13 @@ class GeoLocationPickerInput extends FormField
     {
         parent::__construct($name, $title, $value);
         if ($this->ApiKey()) {
+            Requirements::javascript(
+                "https://maps.googleapis.com/maps/api/js?libraries=places&key=" . urlencode($this->ApiKey()),
+                [
+                    'provides' => ['googlemaps'],
+                    'async' => true,
+                ]
+            );
             Requirements::javascript("gurucomkz/geopicker:javascript/geolocation-picker-input.js");
         }
     }
