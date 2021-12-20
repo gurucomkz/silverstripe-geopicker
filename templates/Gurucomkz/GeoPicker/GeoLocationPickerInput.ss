@@ -1,18 +1,4 @@
 <% if $ApiKey %>
-
-    <script type="text/javascript">
-        (function(u,w,d,s,k){
-            if(d.getElementById(u)) return;
-            var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s);
-            j.id=u;
-            j.async=true;
-            j.type='text/javascript';
-            j.src='https://maps.googleapis.com/maps/api/js?libraries=places&key='+k;
-            f.parentNode.insertBefore(j,f);
-        })('googlemapsscript',window,document,'script','$ApiKey');
-    </script>
-
     <input type="hidden" name="$Name" id="Input_$ID" data-elid="$ID" class="geo-picker-input" value="$Value">
     <div id="Map_Wrapper_$ID" style="width:100%; height:400px;position:relative;border:1px solid black;">
         <div id="Map_$ID" style="width:100%; height:100%;"></div>
